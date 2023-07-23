@@ -21,7 +21,7 @@
 
 /**
  * struct parameters - struct containing parameters.
- * @unsigned: a flag if value is unsigned.
+ * @unsign: a flag if value is unsigned.
  * @plus_flag: for if plus_flag flag is specified.
  * @space_flag: for if space_flag flag is specified.
  * @hashtag_flag: for if hashtag_flag flag is specified.
