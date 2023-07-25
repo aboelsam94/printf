@@ -21,4 +21,5 @@ int print_int(va_list arg);
 int _puts(char *str);
 int print_number(int n, int i);
 int (*get_specifier(char c))(va_list arg);
+int print_binary(va_list arg);
 #endif /* PRINTF_FUNCTIONS */

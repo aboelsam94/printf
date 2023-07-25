@@ -14,7 +14,8 @@ int (*get_specifier(char c))(va_list arg)
 		{'c', print_char},
 		{'s', print_str},
 		{'d', print_int},
-		{'i', print_int}
+		{'i', print_int},
+		{'b', print_binary}
 	};
 
 	for (j = 0; specs[j].s; j++)

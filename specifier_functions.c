@@ -69,3 +69,31 @@ int print_number(int n, int i)
 		i++;
 	return (i);
 }
+
+/**
+ * print_binary - print an integer as binary
+ * @arg: arguments
+ * Return: number of  digits printed
+*/
+int print_binary(va_list arg)
+{
+	unsigned int i;
+	unsigned int num = va_arg(arg, unsigned int);
+	int sum = 0;
+
+	for (i = 1; num / i != 1; i *= 2)
+	{
+	}
+	for (; i; i /= 2)
+	{
+		if (num / i == 1)
+		{
+			_putchar('1');
+			num %= i;
+		}
+		else
+			_putchar('0');
+		sum++;
+	}
+	return (sum);
+}
