@@ -22,4 +22,9 @@ int _puts(char *str);
 int print_number(int n, int i);
 int (*get_specifier(char c))(va_list arg);
 int print_binary(va_list arg);
+int print_u_number(unsigned int n, int i);
+int print_unsigned(va_list arg);
+int print_oct(va_list arg);
+int print_hexa(va_list arg);
+int print_HEXA(va_list arg);
 #endif /* PRINTF_FUNCTIONS */
