@@ -16,6 +16,12 @@ int print_char(va_list arg)
 	return (1);
 }
 
+/**
+ * print_str - function to print string
+ * @arg: arguments of main printf
+ * Return: number of characters printed
+*/
+
 int print_str(va_list arg)
 {
 	int i;
