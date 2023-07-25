@@ -47,6 +47,5 @@ int _printf(const char *format, ...)
 			}
 		}
 	}
-	_putchar('\n');
 	return (sum);
 }
