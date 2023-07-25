@@ -27,4 +27,5 @@ int print_unsigned(va_list arg);
 int print_oct(va_list arg);
 int print_hexa(va_list arg);
 int print_HEXA(va_list arg);
+int print_STR(va_list arg);
 #endif /* PRINTF_FUNCTIONS */

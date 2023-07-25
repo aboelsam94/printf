@@ -20,6 +20,7 @@ int (*get_specifier(char c))(va_list arg)
 		{'o', print_oct},
 		{'x', print_hexa},
 		{'X', print_HEXA}
+		{'S', print_STR}
 	};
 
 	for (j = 0; specs[j].s; j++)
