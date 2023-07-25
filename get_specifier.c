@@ -19,7 +19,7 @@ int (*get_specifier(char c))(va_list arg)
 		{'u', print_unsigned},
 		{'o', print_oct},
 		{'x', print_hexa},
-		{'X', print_HEXA}
+		{'X', print_HEXA},
 		{'S', print_STR}
 	};
 
