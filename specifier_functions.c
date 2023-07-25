@@ -81,6 +81,11 @@ int print_binary(va_list arg)
 	unsigned int num = va_arg(arg, unsigned int);
 	int sum = 0;
 
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	for (i = 1; num / i != 1; i *= 2)
 	{
 	}
