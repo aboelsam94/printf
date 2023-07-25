@@ -12,11 +12,6 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i;
 	int sum = 0;
-	int j;
-	specifier_t specs[] = {
-		{'c', print_char},
-		{'s', print_str}
-	};
 
 	if (!format)
 		return (-1);
@@ -37,14 +32,7 @@ int _printf(const char *format, ...)
 				sum++;
 				continue;
 			}
-			for (j = 0; specs[j].s; j++)
-			{
-				if (specs[j].s == format[i])
-				{
-					sum += specs[j].f(args);
-					break;
-				}
-			}
+			sum += get_specifier(format[i])(args);
 		}
 	}
 	return (sum);
